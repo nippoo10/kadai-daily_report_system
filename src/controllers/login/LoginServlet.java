@@ -35,7 +35,6 @@ public class LoginServlet extends HttpServlet {
      */
     // ログイン画面を表示
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // TODO Auto-generated method stub
         request.setAttribute("_token", request.getSession().getId());
         request.setAttribute("hasError", false);
         if(request.getSession().getAttribute("flush") != null) {
@@ -52,7 +51,6 @@ public class LoginServlet extends HttpServlet {
      */
     // ログイン処理を実行
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // TODO Auto-generated method stub
         // 認証結果を格納する変数
         Boolean check_result = false;
 

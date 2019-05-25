@@ -31,7 +31,6 @@ public class ReportsNewServlet extends HttpServlet {
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // TODO Auto-generated method stub
         request.setAttribute("_token", request.getSession().getId());
 
         Report r = new Report();
@@ -41,4 +40,5 @@ public class ReportsNewServlet extends HttpServlet {
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/reports/new.jsp");
         rd.forward(request, response);
     }
+
 }

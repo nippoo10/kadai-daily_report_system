@@ -48,7 +48,7 @@ public class Report {
     @Column(name = "report_date", nullable = false)
     private Date report_date;
 
-    @Column(name = "taitle", length = 255, nullable = false)
+    @Column(name = "title", length = 255, nullable = false)
     private String title;
 
     @Lob
